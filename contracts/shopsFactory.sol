@@ -10,7 +10,7 @@ contract ShopsFactory{
     Shop shop;
 
     //记录创建的商家
-    Shop[] list_of_shops;
+    Shop[] public list_of_shops;
     
     //记录添加/创建商家成功
     event addShopSuccess(

@@ -6,16 +6,16 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
-contract Shop is ERC721, ERC721URIStorage, Ownable {
+contract Shop is ERC721, ERC721URIStorage {
     using Counters for Counters.Counter;
     //追踪最近mint的token
     Counters.Counter private _tokenId;
     //shop name
-    string _shopName;
+    string public _shopName;
     //Owner of the shop
-    address payable owner;
+    address payable public owner;//报错，说是在opz的合约中已经定义过owner
     //current total value of this shop
-    uint256 totalVal = 0;
+    uint256 private totalVal = 0;
 
     //The struct to store info about a activated deal
     struct Deal {
