@@ -662,8 +662,8 @@
       "artifacts": []
     },
     "C:\\Users\\GaoTao\\Desktop\\sth good\\WWEP\\PayTrust_v0_js\\paytrust\\contracts\\shopsFactory.sol": {
-      "lastModificationDate": 1691236016139,
-      "contentHash": "66539864bd4bc557eaf98e5e2c303713",
+      "lastModificationDate": 1691509671223,
+      "contentHash": "9931c43cc3f7326ccab24ebe626c8af8",
       "sourceName": "contracts/shopsFactory.sol",
       "solcConfig": {
         "version": "0.8.19",

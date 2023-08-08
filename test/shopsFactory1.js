@@ -59,6 +59,6 @@ describe('deploye a shop factory and create shop instance ', () => {
 
     const sp1=await hardhatShopsFactory.createShop("shop1",owner.address);
 
-    await expect(hardhatShopsFactory.createShop("shop",owner.address)).to.emit(hardhatShopsFactory,"addShopSuccess").withArgs(sp1.to,owner.address,Date.now());
+    await expect(hardhatShopsFactory.createShop("shop",owner.address)).to.emit(hardhatShopsFactory,"addShopSuccess").withArgs("shop",owner.address);
   })
 })

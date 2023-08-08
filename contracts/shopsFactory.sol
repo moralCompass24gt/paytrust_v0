@@ -14,15 +14,14 @@ contract ShopsFactory{
     
     //记录添加/创建商家成功
     event addShopSuccess(
-        address deployer,
-        address shop,
-        uint createdTime
+        string name,
+        address shop
     );
 
     function createShop(string calldata _shopName,address payable _owner)external{
         shop = new Shop(_shopName,_owner);
         list_of_shops.push(shop); 
-        uint ct = block.timestamp;
-        emit addShopSuccess(address(this), _owner, ct);
+        // uint ct = block.timestamp;
+        emit addShopSuccess(_shopName, _owner);
     }
 }
